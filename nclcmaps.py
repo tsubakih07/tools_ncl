@@ -9,11 +9,11 @@ colors = {"seaice_2":[[0.0,0.0,139.0],[9.0,47.0,175.0],[25.0,122.0,237.0],[134.0
 
 def get_cmap_dict(name):
     data = np.array(colors[name])
-    cdict = dict({0:data})
+    cdict = dict({'raw':data})
     return cdict
 
 def pick_colors(c_index,cdict):
-    data = cdict.get(0)
+    data = cdict.get('raw')
     for i in np.arange(0,int(len(data))): 
         if i+2 in c_index:
             if i == 0:
