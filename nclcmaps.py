@@ -43,7 +43,7 @@ def cmap(name,c_index=None):
         c_index (list,optional): list of color index (int) 
 
     Returns:
-        ListedColormap: arbitraly modified colormap
+        ListedColormap: arbitrarily modified colormap
     """
     if c_index is None:
         cdict = get_cmap_dict(name)
